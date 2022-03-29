@@ -36,7 +36,7 @@ public class Demo1Helloworld {
 		byte by = (byte) inty; //explicit casting
 		System.out.println(by); 
 		
-		inty = 200;
+		inty = 200;		
 		by = (byte) inty;
 		System.out.println(by);
 		
