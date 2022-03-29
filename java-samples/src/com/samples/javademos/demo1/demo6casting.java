@@ -1,6 +1,6 @@
 package com.samples.javademos.demo1;
 
-public class democasting {
+public class demo6casting {
 
 	public static void main(String[] args) {
 		//implicit conversion

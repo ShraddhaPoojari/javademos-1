@@ -1,6 +1,6 @@
 package com.samples.javademos.demo1;
 
-public class demo6MethodOverloading {
+public class demo8MethodOverloading {
 
 	public static void main(String[] args) {
 		calculateScore("John", 500);
