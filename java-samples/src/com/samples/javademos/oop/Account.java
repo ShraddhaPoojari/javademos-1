@@ -11,6 +11,7 @@ public class Account {
 	
 	public Account(String number) {
 		this.number = number;
+		cAddress = new CustomerAddress();
 	}
 
 	public Account(String number, double balance, String customerName, String customerEmail, String phoneNumber) {

@@ -1,11 +1,18 @@
 package com.samples.javademos.oop;
 
 public class Car {
+	
+	public static String someProperty;
 
 	private String fuelType;
 	private int noofWheels;
 	private String gearType;
 	private String colour;
+	
+	public Car() {
+		
+	}
+	
 	public String getFuelType() {
 		return fuelType;
 	}
@@ -29,6 +36,10 @@ public class Car {
 	}
 	public void setColour(String colour) {
 		this.colour = colour;
+	}
+	
+	public static void printSomething() {
+		System.out.println("Printing Something");
 	}
 
 	@Override
