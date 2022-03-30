@@ -10,8 +10,7 @@ public class Account {
 	private CustomerAddress cAddress;
 	
 	public Account(String number) {
-		this.number = number;
-		cAddress = new CustomerAddress();
+		this(number, 0.00d, null, null, null);
 	}
 
 	public Account(String number, double balance, String customerName, String customerEmail, String phoneNumber) {
@@ -30,6 +29,7 @@ public class Account {
 		this(null, 0.00, null, null, null);
 	}
 
+	
 	public String getNumber() {
 		return number;
 	}
@@ -68,6 +68,14 @@ public class Account {
 
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
+	}
+
+	public CustomerAddress getcAddress() {
+		return cAddress;
+	}
+
+	public void setcAddress(CustomerAddress cAddress) {
+		this.cAddress = cAddress;
 	}
 
 	@Override

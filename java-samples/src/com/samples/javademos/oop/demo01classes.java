@@ -1,8 +1,13 @@
 package com.samples.javademos.oop;
 
+import com.samples.javademos.oop2.Animal;
+
 public class demo01classes {
 
 	public static void main(String[] args) {
+		
+		Employee emp = new Employee();
+		System.out.println(emp);
 		
 		Car.someProperty = "xyz";
 		
