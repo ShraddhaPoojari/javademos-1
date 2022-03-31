@@ -14,6 +14,9 @@ public class ArrayProgram {
 		double average = getAverage(myIntegers);
 		System.out.println("Average = " + average);
 		
+		
+		System.out.println("Minimum = " + findMin(myIntegers));
+		
 		int[] newArray = new int[5];
 		for (int i=0; i<myIntegers.length; i++)
 			newArray[i] = myIntegers[i];
@@ -23,6 +26,15 @@ public class ArrayProgram {
 		
 		printMyArray(newArray);
 		
+	}
+
+	private static int findMin(int[] myIntegers) {
+		int min = Integer.MAX_VALUE;
+		for (int i=0; i<myIntegers.length; i++) {
+			if (myIntegers[i] < min)
+				min = myIntegers[i];
+		}
+		return min;
 	}
 
 	private static double getAverage(int[] myIntegers) {
