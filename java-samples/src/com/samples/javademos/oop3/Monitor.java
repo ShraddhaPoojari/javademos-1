@@ -1,6 +1,6 @@
 package com.samples.javademos.oop3;
 
-public class Monitor {
+public class Monitor implements IFlyable {
 	private String model;
 	private String manufacturer;
 	private int size;
@@ -11,6 +11,10 @@ public class Monitor {
 	}
 	public void drawPixelAt(int x, int y, String color) {
 		System.out.println("Drawing pixel at " + x + ", " + y + " in color " + color);
+	}
+	@Override
+	public void fly() {
+		System.out.println("Monitor is Flying...");
 	}
 
 }

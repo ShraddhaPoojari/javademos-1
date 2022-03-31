@@ -1,6 +1,8 @@
 package com.samples.javademos.oop5;
 
-public class MazeRunner extends Movie{
+import com.samples.javademos.oop3.IFlyable;
+
+public class MazeRunner extends Movie {
 
 	public MazeRunner() {
 		super("MazeRunner");
@@ -8,5 +10,6 @@ public class MazeRunner extends Movie{
 	public String plot() {
 		return "Run and escape the Maze";
 	}
+
 
 }
