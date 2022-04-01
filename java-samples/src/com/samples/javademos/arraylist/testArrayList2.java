@@ -1,6 +1,7 @@
 package com.samples.javademos.arraylist;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 import com.samples.javademos.oop3.*;
@@ -9,7 +10,7 @@ public class testArrayList2 {
 
 	public static void main(String[] args) {
 		
-		List<IFlyable> flyingObjects = new ArrayList<>();
+		List<IFlyable> flyingObjects = new LinkedList<IFlyable>();
 		flyingObjects.add(new BoxCase("220B", "Dell",  "244"));
 		flyingObjects.add(new Monitor("27 Inch", "Acer", 27));
 		flyingObjects.add(new MotherBoard("BJ-200", "Asus", 4, 6, "v2.444"));
