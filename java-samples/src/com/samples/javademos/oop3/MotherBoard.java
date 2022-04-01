@@ -14,6 +14,9 @@ public class MotherBoard implements IFlyable{
 		this.cardSlots = cardSlots;
 		this.bios = bios;
 	}
+	public MotherBoard() {
+		this(null, null, 0, 0, null);
+	}
 	public void loadProgram(String programName) {
 		System.out.println("Program " + programName + " is now loading...");
 	}

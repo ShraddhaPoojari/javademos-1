@@ -9,6 +9,9 @@ public class Monitor implements IFlyable {
 		this.manufacturer = manufacturer;
 		this.size = size;
 	}
+	public Monitor() {
+		this(null, null, 0);
+	}
 	public void drawPixelAt(int x, int y, String color) {
 		System.out.println("Drawing pixel at " + x + ", " + y + " in color " + color);
 	}

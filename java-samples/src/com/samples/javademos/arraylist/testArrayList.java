@@ -16,6 +16,13 @@ public class testArrayList {
 		strList.add("is fun");
 		System.out.println("strList: " + strList);
 		
+		int x = 10;
+		Integer z = Integer.valueOf(x);	// this process of converting primitive 
+										//   to wrapper, is called 'Boxing'
+		Integer newvar = 11;			// Auto-Boxing
+		int y = newvar.intValue();		// un-boxing
+		
+		
 		List<Integer> list1 = new ArrayList<Integer>();
 		list1.add(1);
 		list1.add(2);
@@ -38,6 +45,15 @@ public class testArrayList {
 		list1.add(345);
 		System.out.println("list1 = " + list1);
 		
+		list1.add(0, 100);
+		System.out.println("list1 = " + list1);
+		
+		list1.set(list1.size()-1, 102);
+		System.out.println("list1 = " + list1);
+		
+		List<Integer> newList = new ArrayList<Integer>();
+		for (int i=0; i<100; i++) 
+			newList.add(i);
 		
 	}
 	
