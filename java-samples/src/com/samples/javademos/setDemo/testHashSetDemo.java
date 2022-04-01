@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
-public class testSetDemo {
+public class testHashSetDemo {
 
 	public static void main(String[] args) {
 		
@@ -12,7 +12,7 @@ public class testSetDemo {
 		set1.add("a");
 		set1.add("b");
 		set1.add("a");
-//		System.out.println(set1);
+		System.out.println(set1);
 		
 		Set<Book> books = new HashSet<Book>();
 		Book book1 = new Book("RK Narayan", "Malgudi days", 1942);
