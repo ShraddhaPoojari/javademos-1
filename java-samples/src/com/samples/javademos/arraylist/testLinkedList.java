@@ -19,6 +19,7 @@ public class testLinkedList {
 		
 		printList2(placesToVisit);
 		
+		printList3(placesToVisit);
 	}
 	
 	private static void printList(List<String> mylist) {
@@ -42,6 +43,12 @@ public class testLinkedList {
 		}
 		System.out.println("-----------------------");
 		
+	}
+	
+	private static void printList3(List<String> mylist) {
+		for (Iterator it= mylist.iterator(); it.hasNext();) {
+	         System.out.println(it.next());
+		}
 	}
 	
 }
