@@ -12,14 +12,19 @@ public class testLinkedList {
 		placesToVisit.add("Kerala");
 		placesToVisit.add("Australia");
 		placesToVisit.add("Mumbai");
+		placesToVisit.add("Mumbai");
 		placesToVisit.add("Kanyakumari");
 		placesToVisit.add("London");
 		
+		System.out.println(placesToVisit.contains("Mumbai"));
+		System.out.println(placesToVisit.indexOf("Australia"));
+		System.out.println(placesToVisit.contains("Delhi"));
+		
 		printList(placesToVisit);
 		
-		printList2(placesToVisit);
+		//printList2(placesToVisit);
 		
-		printList3(placesToVisit);
+		//printList3(placesToVisit);
 	}
 	
 	private static void printList(List<String> mylist) {
