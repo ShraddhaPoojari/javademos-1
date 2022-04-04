@@ -1,5 +1,6 @@
 package com.samples.javademos.setDemo;
 
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -64,7 +65,6 @@ class Book {
 			return false;
 		Book other = (Book) obj;
 		return Objects.equals(author, other.author) && Objects.equals(title, other.title) && year == other.year;
-	}
-	
+	}	
 	
 }

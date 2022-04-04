@@ -17,6 +17,7 @@ public class testLinkedHashSet {
 		myhashSet.add("Alex");
 		myhashSet.add("Max");
 		myhashSet.add("Tracy");
+		myhashSet.add("Tracy");
 		System.out.println(myhashSet);
 		
 		Set<String> myhashSet2 = new LinkedHashSet<String>();
