@@ -22,15 +22,18 @@ public class testFileOutput {
 		try {
 			FileInputStream fis = new FileInputStream(filePath);
 			int i=0;
+			int count = 0;
 			while ( (i=fis.read()) != -1) {
+				count++;
 				System.out.print((char)i);
+				if (count == 10) break;
 			}
 			fis.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
+		} 
 		
 	}
 
