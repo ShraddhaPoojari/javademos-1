@@ -14,11 +14,48 @@ public class testSerialization {
 		
 		String filePath = "c:\\javafsd\\out\\book1.txt";
 		
-		serializeBook(filePath);
+		//serializeBook(filePath);
 		
-		deserializeBook(filePath);
+		//deserializeBook(filePath);
+		
+		serializeTextBook(filePath);
+		
+		deserializeTextBook(filePath);
 
 		
+	}
+
+	private static void deserializeTextBook(String filePath) {
+		ObjectInputStream ois;
+		try {
+			ois = new ObjectInputStream(new FileInputStream(filePath));
+			TextBook book1 = (TextBook) ois.readObject();
+			System.out.println(book1);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+
+	private static void serializeTextBook(String filePath) {
+		Book book1 = new TextBook("Harry Potter", "J.K.Rowling", 1997, 9, "xyz");
+		
+		FileOutputStream fout;
+		try {
+			fout = new FileOutputStream(filePath);
+			ObjectOutputStream oos = new ObjectOutputStream(fout);
+			oos.writeObject(book1);
+			oos.flush();
+			oos.close();
+			System.out.println("Done");			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	private static void deserializeBook(String filePath) {
