@@ -38,4 +38,35 @@ public class testCommandLineApp {
 		scanner.close();
 		return message;
 	}
+	
+	private static String displayMenuOptions() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("1. Display Files");
+		System.out.println("2. Add file");
+		System.out.println("3. Delete file");
+		System.out.println("4. Search file");
+		System.out.println("5. Close Application");
+		System.out.println("Enter Option ");
+		String option = scanner.nextLine();
+		switch (option) {
+			case "1": 
+				displayFiles();
+				break;
+			case "2":
+				addFile();
+				break;
+		}
+		scanner.close();
+		return null;
+	}
+
+	private static void addFile() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private static void displayFiles() {
+		// TODO Auto-generated method stub
+		
+	}
 }
