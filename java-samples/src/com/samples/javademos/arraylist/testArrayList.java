@@ -4,9 +4,14 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import com.samples.designpatterns.Database;
+import com.samples.designpatterns.*;
 public class testArrayList {
 
 	public static void main(String[] args) {
+		
+		Database mydb = Database.getMyDBInstance();
+		mydb.connect();
 		
 		List<String> strList = new ArrayList<String>();
 		strList.add("Hello");
