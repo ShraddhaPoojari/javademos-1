@@ -29,12 +29,15 @@ class BankAccount implements Runnable{
 		this.balance = 100;
 	}
 	
-	public void withdrawMoney(int amount) {
+	public synchronized void withdrawMoney(int amount) {
 		System.out.println(Thread.currentThread().getName() + ": Want to withdraw: " + amount);
 		if (balance >= amount) {
 			System.out.println(Thread.currentThread().getName() + ": About to withdraw: " + amount);
 			balance -= amount;
 			System.out.println(Thread.currentThread().getName() + ": Amount withdrawn: " + amount + ". Balance = " + this.balance);
+			if (this.balance < 0) {
+				System.out.println(Thread.currentThread().getName() + ": Money overdrawn");
+			}
 		} else {
 			System.out.println(Thread.currentThread().getName() + ": Sorry, not enough balance. Balance = " + this.balance);
 		}
@@ -43,8 +46,6 @@ class BankAccount implements Runnable{
 	@Override
 	public void run() {
 		withdrawMoney(75);
-		if (this.balance < 0) {
-			System.out.println(Thread.currentThread().getName() + ": Money overdrawn");
-		}
+		
 	}
 }

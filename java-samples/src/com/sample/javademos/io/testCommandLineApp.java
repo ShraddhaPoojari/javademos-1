@@ -30,6 +30,10 @@ public class testCommandLineApp {
 		}
 	}
 
+	/*
+	 * Get the user input 
+	 */
+	
 	private static String getUserInput() {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter your name: ");
